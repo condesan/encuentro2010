@@ -1,0 +1,16 @@
+; $Id: profile2.info,v 1.1.2.8 2010/10/04 16:00:05 fago Exp $
+name = Profile2
+description = Supports configurable user profiles.
+version = VERSION
+core = 7.x
+files[] = profile2.module
+files[] = profile2.info.inc
+files[] = profile2.install
+files[] = profile2.test
+dependencies[] = entity
+; Information added by drupal.org packaging script on 2010-10-11
+version = "7.x-1.0-alpha1"
+core = "7.x"
+project = "profile2"
+datestamp = "1286808363"
+

@@ -99,26 +99,7 @@
       <?php print $feed_icons; ?>
     </div></div> <!-- /.section, /#content -->
 
-    <?php if ($page['navigation'] || $main_menu): ?>
-      <div id="navigation"><div class="section clearfix">
-
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu',
-            'class' => array('links', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-
-        <?php print render($page['navigation']); ?>
-
-      </div></div> <!-- /.section, /#navigation -->
-    <?php endif; ?>
+ 
 
     <?php print render($page['sidebar_first']); ?>
 

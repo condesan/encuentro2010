@@ -1,0 +1,14 @@
+body {
+background-color:#454545;
+font-family:Calibri, Verdana, Tahoma;
+font-size:80%;
+}
+
+#page-wrapper {
+background-color:#fff;
+}
+
+#header {
+background:url('../images/header.jpg');
+height:300px;
+}

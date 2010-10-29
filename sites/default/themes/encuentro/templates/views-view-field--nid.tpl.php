@@ -25,7 +25,22 @@
 $node = node_load($output);
 $filepath = file_create_url($node->field_imagen['und'][0]['uri']);
 
-print base_path() . "sites/all/libraries/phpThumb/phpThumb.php?src=" . $filepath ."&height=200";
+#print base_path() . "sites/all/libraries/phpThumb/phpThumb.php?src=" . $filepath ."&height=200";
 
+#Include the Transform.php file
+require_once( 'Image/Transform.php' );
+
+#Create new Image Transform object
+#(Auto selects the "driver")
+$img = Image_Transform::factory();
+
+#Load an image file
+$img->load($filepath);
+
+#Scale the image, keeping aspect ratio, to 200px
+$img->scaleByX( 200 );
+
+#Save to a new file
+$img->save(base_path() . 'sites/default/files/' . $node->field_imagen['und'][0]['filename'] .'_200.jpg');
 
 ?>

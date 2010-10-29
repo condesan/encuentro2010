@@ -17,7 +17,7 @@
  * website's hostname from left to right and pathname from right to
  * left. The first configuration file found will be used and any
  * others will be ignored. If no other configuration file is found
- * then the default configuration file at 'sites/default' will be used.
+ * then the default configuration file at 'sites/default' will be used. 
  *
  * For example, for a fictitious site installed at
  * http://www.drupal.org/mysite/test/, the 'settings.php'
@@ -184,9 +184,9 @@ $databases = array (
     'default' => 
     array (
       'driver' => 'mysql',
-      'database' => 'encuentro',
-      'username' => 'root',
-      'password' => '123456',
+      'database' => 'devcond_encuentro',
+      'username' => 'devcond_admin',
+      'password' => 'admin',
       'host' => 'localhost',
       'port' => '',
       'prefix' => 'encuentro_',

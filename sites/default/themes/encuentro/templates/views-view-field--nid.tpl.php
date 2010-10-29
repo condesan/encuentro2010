@@ -23,12 +23,13 @@
 <?php 
 
 $node = node_load($output);
-$filepath = file_create_url($node->field_imagen['und'][0]['uri']);
+$filepath = drupal_realpath($node->field_imagen['und'][0]['uri']);
+print $filepath;
 $img = image_load($filepath);
+
 if ($img ) {
-	$img_resize = image_resize($file, 100, 200);
-	$d = file_directory_temp();
-	image_save($img_resize, '/tmp');
+   $new = image_resize($img, 200, 300);
+	 image_save($img, './thumbs');
 	}
 else {
 	drupal_set_message('no se puede');

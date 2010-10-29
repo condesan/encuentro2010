@@ -1,0 +1,20 @@
+<?php
+//$Id
+/**
+ * 
+ */
+ 
+function custom_node_view($node, $build_mode = 'full') {
+
+
+/*
+if ($node->type == 'sesion') {
+		dsm($node);
+		$node->content['nodeapi_example'] = array(
+      '#markup' => 'holaaaaa',
+			'#weight' => -1,
+    );
+	}
+*/
+
+}  

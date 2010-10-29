@@ -10,7 +10,7 @@ background-color:#fff;
 
 #header {
 background:url('../images/header.jpg');
-height:300px;
+height:298px;
 }
 
 h1.title {
@@ -66,3 +66,6 @@ text-transform:uppercase;
 color:#fff;
 }
 
+#block-system-main-menu ul.menu {
+padding-left:0em;
+}

@@ -1,0 +1,4 @@
+; $Id$
+name = custom module for CONDESAN
+description = to do
+core = 7.x

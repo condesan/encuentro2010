@@ -69,3 +69,12 @@ color:#fff;
 #block-system-main-menu ul.menu {
 padding-left:0em;
 }
+
+.view-noticias .views-row {
+clear:both;
+}
+
+.view-noticias .views-row .views-field-nid {
+float:left;
+padding-right:1em;
+}

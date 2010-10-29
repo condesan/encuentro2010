@@ -21,22 +21,10 @@
   */
 ?>
 <?php 
-
-
 $node = node_load($output);
 $file = file_load($node->field_imagen['und'][0]['fid']);
 $filepath = drupal_realpath($file->uri);
-$img = image_load($filepath);
-if ($img ) {
-   $new = image_resize($img, 200, 300);
-	 if (drupal_chmod('/var/www/encuentro2010/sites/default/files/thumb', '0777')){
-	 image_save($img);
- }
-	}
-else {
-	drupal_set_message('no se puede');
-	}	
-
+print theme('image', array('path' => 'sites/default/files/' . $file->filename, 'width' => 150));
 
 #print base_path() . "sites/all/libraries/phpThumb/phpThumb.php?src=" . $filepath ."&height=200";
 

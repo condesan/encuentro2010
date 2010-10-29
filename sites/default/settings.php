@@ -184,9 +184,9 @@ $databases = array (
     'default' => 
     array (
       'driver' => 'mysql',
-      'database' => 'devcond_encuentro',
-      'username' => 'devcond_admin',
-      'password' => 'admin',
+      'database' => 'encuentro',
+      'username' => 'root',
+      'password' => '123456',
       'host' => 'localhost',
       'port' => '',
       'prefix' => 'encuentro_',

@@ -8,7 +8,7 @@ function custom_node_view($node, $build_mode = 'full') {
 if ($node->type == 'sesion') {
 		$sql = "SELECT entity_id FROM {field_data_field_sesiones} WHERE field_sesiones_nid = :uid";
 		$result = db_query($sql, array(':uid' => $node->nid));
-		if (!empty($ponencias)) {
+		if (!empty($result)) {
 		foreach ($result as $record) {
 			$nid = $record->entity_id;
 			$node_sesion = node_load($nid);
